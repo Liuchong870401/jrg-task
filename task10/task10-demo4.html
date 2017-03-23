@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>代码4</title>
+		<style type="text/css">
+			nav {
+				width:  600px;
+				margin:  0 auto;
+				font-family: arial;
+			}
+			.content::after {
+				content: "";
+				display: block;
+				clear: both;
+			}
+			.content {
+				zoom: 1;
+				margin: 0;
+				padding:  0;
+				list-style:  none;
+				background-color:  #F1F1F1;
+				box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+			}
+			.content li {
+				float:  left;
+				position:  relative;
+			}
+			.content a{
+				text-decoration:  none;
+				color:  #333;
+				display: block;
+				padding: 8px 16px;
+			}
+			.content a:hover {
+				color: #000;
+				background-color:  #ccc;
+			}
+			.content-tier2 {
+				display: none;
+				width: 160px;
+				color: #000;
+				background-color:  #fff;
+				position:  absolute;
+				box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+			} 
+				.content li:hover .content-tier2 {
+					display: block;
+				}
+		</style>
+	</head>
+	<body>
+		<nav>
+			<ul class="content">
+				<li><a href="">首页</a></li>
+				<li><a href="">作品</a></li>
+				<li><a href="">更多</a>
+					<div class="content-tier2">
+						<a href="">Github</a>
+						<a href="">博客</a>
+						<a href="">知乎</a>
+					</div>
+				</li>
+			</ul>
+		</nav>
+	</body>
+</html>

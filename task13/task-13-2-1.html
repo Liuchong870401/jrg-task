@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+			<style type="text/css">
+			* {
+				margin: 0;
+				padding:  0;
+			}
+			.box {
+					position: relative;
+					width: 200px;
+					height: 80px;
+					border: 1px solid #000;
+					margin: 40px;
+				}
+			.box1:before {
+				position: absolute;
+				left: 15px;
+				top:  -15px;
+				content: "";
+				border-left:
+				15px solid transparent;
+				border-right:
+				15px solid transparent;
+				border-bottom:  
+				15px solid #7C7C7C;
+			}
+			.box2:before {
+				position: absolute;
+				right: -1px;
+				top: -1px;
+				content: "";
+				border-top: 
+				15px solid red;
+				border-right: 
+				15px solid red;
+				border-bottom: 
+				15px solid transparent;
+				border-left: 
+				15px solid transparent;
+			}
+			.box3:before {
+				position: absolute;
+				left: 15px;
+				top:  -15px;
+				content: "";
+				border-left:
+				15px solid transparent;
+				border-right:
+				15px solid transparent;
+				border-bottom:  
+				15px solid #000;
+			}
+			.box3:after {
+				position: absolute;
+				left: 15px;
+				top:  -14px;
+				content: "";
+				border-left:
+				15px solid transparent;
+				border-right:
+				15px solid transparent;
+				border-bottom:  
+				15px solid #FFF;
+			}
+			</style>
+		
+	</head>
+	<body>
+			<div class="box box1">
+			</div>
+				<div class="box box2">
+			</div>
+				<div class="box box3">
+			</div>
+	</body>
+</html>

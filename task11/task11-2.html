@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>三栏布局</title>
+		<style type="text/css">
+		#content {
+			width: 600px;
+		}
+		#content:after {
+			content: "";
+			display: block;
+			clear:  both;
+		}
+			#aside {
+				width: 100px;
+				height: 500px;
+				background-color:  red;
+				float:  left;
+			}
+			#menu {
+				width:  100px;
+				height: 500px;
+				background-color:  blue;
+				float: right;
+			}
+			#main {
+				height:  450px;
+				background-color:  green;
+				margin-left: 110px;
+				margin-right: 110px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="content">
+			<div id="aside">
+			aside
+		</div>
+		<div id="menu">
+			menu
+		</div>
+		<div id="main">
+			main
+		</div>
+		</div>
+		
+	</body>
+</html>

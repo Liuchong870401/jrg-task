@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>代码3</title>
+		<style type="text/css">
+			.content {
+				width:  600px;
+				margin:  0 auto;
+			}
+			.content .back-box {
+				background-color:  rgba(0, 0, 0, .4);
+				position:  absolute;
+				left: 0;
+           		top: 0;
+           		bottom: 0;
+          		 right: 0;
+			}
+			.content .box {
+				position:  absolute;
+				left: 50%;
+				top:  50%;
+				 width: 600px;
+				transform:  				translate(-50%, -50%);
+				box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			}
+			.box header,.box footer {
+				background-color:  #009688;
+				padding:  1px 16px;
+				color:  white;
+			}
+			.box span{
+				float: right;
+				font-size:  20px;
+				font-weight:  bold;
+				margin-top: 16px;
+				cursor:  pointer;
+			}
+			.box main {
+			padding: 16px;
+			background-color:  white;
+			}
+		</style>
+	</head>
+	<body>
+			<div class="content">
+				<h1>这是页面内容</h1>
+				<h1>这是页面内容</h1>
+				<h1>这是页面内容</h1>
+				<div class="back-box">
+					<div class="box">
+					<header>
+						<span class="close">
+							×
+						</span>
+						<h3>
+							头部
+						</h3>
+					</header>
+				<main>
+					<p>这是内容</p>
+					<p>这是内容</p>
+				</main>
+				<footer>
+					<p>尾部</p>
+				</footer>
+					</div>
+				</div>
+			</div>
+	</body>
+</html>

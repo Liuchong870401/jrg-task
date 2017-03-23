@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>vertical-align实现居中</title>
+		<style type="text/css">
+			.box {
+				border:  1px solid #000;
+				height: 300px;
+				text-align:  center;
+			}
+			.content {
+				display: inline-block;
+			}
+			.box:before {
+				content: "";
+				display: inline-block;
+				height: 100%;
+				vertical-align: middle;
+			}
+		</style>
+		
+	</head>
+	<body>
+		<div class="box">
+			<p class="content">行内元素或表格：vertical-align实现居中</p>
+		</div>
+	</body>
+</html>

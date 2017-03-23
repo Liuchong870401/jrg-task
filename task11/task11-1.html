@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>单栏布局</title>
+	</head>
+	<style type="text/css">
+		.layout{
+		max-width: 900px;
+		margin: 0 auto;
+	}
+		#header {
+			background-color:  red;
+			height: 50px;
+			margin-bottom: 10px;
+		}
+		#content {
+			background-color:  blue;
+			height: 400px;
+		}
+		#footer {
+			background-color:  green;
+			height: 50px;
+			margin-top: 10px;
+		}
+	</style>
+	<body>
+		<div id="main">
+			<div id="header">
+				<div class="layout">
+				header
+			</div>
+			</div>
+			<div id="content" class="layout">
+				content
+			</div>
+			<div id="footer">
+				<div class="layout">
+					footer
+				</div>
+			</div>
+		</div>
+		
+	</body>
+</html>
