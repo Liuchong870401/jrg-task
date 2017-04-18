@@ -1,0 +1,150 @@
+/*1.重置默认样式*/
+body {
+	font-family: "\5FAE\8F6F\96C5\9ED1",Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 1.5;
+	color:  #333;
+}
+div,h1,h2,h3,h3,h4,h5,ul,li,p {
+	margin: 0;
+	padding: 0;
+}
+h3 {
+	font-size:  16px;
+}
+h5 {
+	font-size:  14px;
+}
+.page {
+	width: 650px;
+	margin: 15px auto;
+	padding: 30px;
+	background-color: #ccccff;
+	border-radius: 5px;
+	box-shadow: 5px 5px 8px #99ccff;
+}
+/*2.设置标题宽度内外边距*/
+h2,h3,h4{
+	margin-bottom: 25px;
+	padding-bottom:  10px;
+	width:  100%;
+}
+h4 {
+	border-bottom: 2px solid #99ccff;
+}
+h5 {
+	padding-top:  10px;
+	padding-bottom:  10px;*
+}
+/*3.利用浮动定位设置页面头部*/
+.header,.footer:after {
+	content: "";
+	display: block;
+	clear:  both;
+}
+.personal {
+	float: left;
+	width: 50%;
+}
+.personal .avatar {
+	position: relative;
+	float: left;
+	width: 100px;
+	height: 100px;
+	border: 1px solid #000000;
+	border-radius:  50%;
+	background: #99ccff;
+}
+.personal .avatar:before {
+	display: block;
+	position: absolute;
+	content: "L";
+	left: 20%;
+	top: 15%;
+	font-size: 25px;
+}
+.personal .avatar:after {
+	display: block;
+	position: absolute;
+	content: "C";
+	right: 20%;
+	bottom: 15%;
+	font-size: 25px;
+}
+.personal .avatar .oblique-line {
+	position:  absolute;
+	width: 60px;
+	border: 1px solid ;
+	left:  20%;
+	top:  45%;
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);  /*Safari, Chrome, mobile Safari, and Android */
+	-moz-transform: rotate(-45deg); /* Firefox */
+	-o-transform: rotate(-45deg); /* Opera */
+	-ms-transform: rotate(-45deg); /* IE 9 */*/
+}
+.name {
+	float:  left;
+	padding: 30px;
+}
+.name h2 {
+	letter-spacing: 1em;
+}
+.name p {
+	margin-top:  -15px;
+	
+}
+.message {
+	float:  right;
+}
+.message  h4 {
+	border-bottom: 3px solid #002D4B;
+}
+/*4.设置主体部分列表样式*/
+ul li{
+	position:  relative;
+	padding-left: 30px;
+	padding-top:  0;
+	top:-15px;
+	list-style: none;
+}
+.main ul {
+	border-left :2px solid #002D4B;
+}
+.main ul li:before {
+	content: "";
+	display: block;
+	position: absolute;
+	border: 5px solid #002D4B;
+	border-radius:  50%;
+	left:  -6px;
+	top:  14px;
+}
+.main h4{
+	width:  50%;
+}
+.main span {
+	font-size:  12px;
+	color:  #666;
+}
+/*5.利用浮动设置 页面底部，利用定位设置使用icon图标的列表*/
+.footer .active {
+	float:  left;
+	width: 50%;
+}
+.footer .skill {
+	float:  left;
+	width: 40%;
+	margin-left: 10%;
+}
+.footer .skill li {
+	float:  left;
+	width:  30%;
+	padding:  15px;
+	padding-left:  30px;
+}
+.iconfont {
+	display: block;
+	position: absolute;
+	left:  -4px;
+}
