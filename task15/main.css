@@ -1,0 +1,328 @@
+/*1.设置页面基本属性*/
+/*body font margin padding width*/
+body {
+	font-size:  14px;
+	line-height:  1.2;
+	 font-family: "\5FAE\8F6F\96C5\9ED1",Arial, Helvetica, 	sans-serif;
+	margin: 0 auto;
+}
+div,section,header,footer,h1,h2,h3,h4,h5,h6,p,ul,ol,li,form,input,textarea,a{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; 
+}
+h1,h2,h3,h4,h5,span,a {
+	letter-spacing: 0.2em;
+}
+span {
+	color:  #996600;
+	background-color:  #999;
+	padding:  10px;
+	vertical-align:  middle;
+}
+a:link,
+.sub-button input{
+	color:  #996600;
+	background-color:  #999;
+	text-decoration:  none;
+	font-size:  18px;
+	text-align:  center;
+}
+a:visited,
+.sub-button input:visited {
+	color:  #336699;
+}
+a:hover,
+.sub-button input:hover {
+	opacity:  .7;
+}
+a:active,
+.sub-button input:active {
+	color:  #ffff00;
+	background-color: #ff6666
+}
+ul {
+	list-style:  none;
+}
+.layout {
+	max-width:  960px;
+	margin:  0 auto;
+}
+.clear:after {
+	content: "";
+	display:  block;
+	clear: both;
+}
+
+section div[class~=layout]>h2,
+section div[class~=layout]>p {
+	width:  300px;
+	margin:30px auto 10px auto;
+	text-align: center;
+}
+div[class*=wrap] {
+	padding-top: 20px;
+}
+.discuss-list ul,
+ .movie-wrap ul,
+ .offline-wrap ul {
+	margin-left:  -30px;
+	float: left;
+}
+.discuss-list ul li ,
+ .movie-wrap ul li ,
+ .offline-wrap ul li  {
+	float:  left;
+	margin-left: 30px;
+	padding: 20px;
+	position:  relative;
+}
+.discuss-post .icon-plus,
+ .movie-post .icon-plus,
+ .offline-post .icon-plus {
+ 	position:  absolute;
+ 	top: 0;
+ 	left:  0;
+    right:  0;
+ 	bottom:  0;
+ 	padding-top:  50%;
+ 	background-color:  rgba(55,55,55,.6);
+ 	opacity:  0;
+	transition:  opacity .75s ease-out;
+	font-size:  40px;
+	line-height:  100%;
+ }
+ .discuss-list ul li:hover .discuss-post .icon-plus,
+ .movie-wrap ul li:hover .movie-post .icon-plus,
+ .offline-wrap ul li:hover .offline-post .icon-plus {
+ 	opacity:  1;
+ }
+/*2.设置导航栏浮动定于头部*/
+/*nav*/
+#nav {
+	width:  100%;
+	background-color:  #333;
+	opacity:  .8;
+	position:  fixed;
+	top: 0;
+	left: 0;
+	z-index:  10;
+}
+.nav-wrap img {
+	height:  70px;
+	float:  left;
+}
+.nav-wrap .nav-content{
+	float: right;
+}
+.nav-content ul li {
+	float:  left;
+	margin: 10px 2px;
+}
+.nav-content a {
+	display:  inline-block;
+	padding:  10px;
+	border-radius:  4px;
+}
+
+/*3.设置页面头部*/
+/*header*/
+#header{
+	height:  600px;
+	background-image: url(images/top-theme.jpg); 	background-repeat: no-repeat ;
+	background-position:  50% 100%;
+	background-size:  cover;
+}
+#header .top {
+	position:  relative;
+	height:  100%;
+}
+.top h2 {
+	position:  absolute;
+	width:  200px;
+	left:  50%;
+	top: 20%;
+	margin-left: -100px;
+	text-align: center;
+}
+.top h1 {
+	position:  absolute;
+	width:  370px;
+	left:  50%;
+	top: 30%;
+	margin-left: -170px;
+	text-align: center;
+}
+.top a {
+	display:  block;
+	position: absolute;
+	width:  120px;
+	height:  50px;
+	left:  50%;
+	top: 40%;
+	margin-left: -60px;
+	text-align: center;
+	padding-top: 15px;
+	border-radius:  5px;
+}
+/*4.在线论坛*/
+/*section  discuss movie*/
+#main-discuss {
+	background-color:  #FFFFCC;
+	width:  100%;
+}
+.discuss-post span, 
+ .movie-post span,
+ .offline-post span{
+	display: block;
+	padding-top:  15px;
+}
+.discuss-post img {
+	height:  250px;
+	width:  250px;
+	border-radius: 50%;
+}
+/*5.电影类别*/
+#main-movie {
+	background-color:  #ccff99;
+	width:  100%;
+}
+.movie-post img {
+	width:  250px;
+	height: 180px;
+	border-radius: 5px;
+	border:  3px solid #666;
+	
+}
+/*6.影视专题利用定位设置图片文字和时间线*/
+#main-special {
+	background-color:  #99CCFF;
+	width:  100%;
+}
+.special-wrap ul {
+	text-align:  center;
+}
+.special-wrap ul li {
+	position:  relative;
+	padding-bottom: 40px;
+}
+.special-wrap ul li:after {
+	content: "";
+	display:  block;
+	height: 100%;
+	border-left: 3px solid #666;
+	position:  absolute;
+	top:  0;
+	left:  50%;
+	z-index:  1;
+}
+.special-wrap ul li .special-text {
+	position:  absolute;
+	top:  0;
+	right:  50%;
+	margin-right: 100px;
+	text-align:  right;
+}
+.special-wrap ul li:nth-child(even) .special-text {
+	top:  0;
+	left:  50%;
+	right:  0;
+	margin-right:  0;
+	margin-left: 100px;
+	text-align:  left;
+}
+.special-post a {
+	display:  inline-block;
+	height:  150px;
+	width:  150px;
+	position:  relative;
+	border-radius: 50%;
+	
+}
+.special-post img {
+	position:  relative;
+	height:  150px;
+	width:  150px;
+	background-color: #99CCFF ;
+	border:  3px solid #666;
+	border-radius: 50%;
+	z-index:  2;
+}
+/*7.联系我们部分*/
+#main-offline {
+	background-color:  #FFCC99;
+	width:  100%;
+}
+.offline-wrap img {
+	height:  250px;
+	width:  250px;
+	border-radius: 50%;
+}
+/*8.form表单部分*/
+#contact {
+	width:  100%;
+	height:  600px;
+	background-image: url(images/bottom-theme.jpg); 	background-repeat: no-repeat ;
+	background-position:  50% 100%;
+	background-size:  cover;
+}
+.contacts-wrap h2,
+.contacts-wrap p {
+	color:  #FFF;
+}
+.contacts-wrap .form-container {
+	float: left;
+	width:  50%;
+	padding: 20px;
+}
+.form-container input,
+.form-container textarea{
+	width:  100%;
+	border-radius:  8px;
+	outline:  none;
+}
+.form-container input {
+	height:  50px;
+	padding:  10px;
+	margin-top:  25px;
+	margin-bottom:  0;
+}
+.form-container textarea {
+	height: 230px;
+}
+.sub-button input {
+	display:  block;
+	width:  120px;
+	height:  50px;
+	margin:  15px auto;
+	border-radius: 8px;
+	border: none;
+	font-size:  16px;
+	
+}
+/*9.页尾注脚部分*/
+#footer {
+	background-color:  #009966;
+	height:  70px;
+}
+.footer-wrap {
+	margin: 0 auto;	
+}
+.footer-wrap p,
+.footer-wrap ul {
+	float:  left;
+	width:  50%;
+	margin-top:  20px;
+}
+.footer-wrap ul li {
+	float:  left;
+	width:  80px;
+}
+.footer-wrap a {
+	display:  block;
+	border-radius:5px;
+	margin: 2px;
+	padding: 0;
+	text-align: center;
+	font-size:  22px;
+}
